@@ -1,0 +1,29 @@
+.navbar{
+    background-color: $blanco;    
+    .navbar-toggler {
+        border: none;
+        box-shadow: none;
+    
+        &:focus,
+        &:active {
+        box-shadow: none;
+        outline: none;
+        }
+    }
+    
+}
+
+.contenedor_logo{
+    img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid $azul-principal;
+        transition:transform 1.2s ease ;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }   
+}
+

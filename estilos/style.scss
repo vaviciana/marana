@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*VARIABLES IMPORTANTES*/
+/*COLORES*/
+$azul-principal:#0F1C2E;
+$amarillo-principal:#E3B448;
+$gris:#8D8D8D;
+$blanco:#F8F9FA ;
+
+/*FUENTES*/
+$titulo:'TT Drugs bold';
+$parrafo:'Lora';
+
+/*TITULOS*/
+h1{
+    display: inline;
+    font-family: $titulo;
+    background: linear-gradient(to top, $amarillo-principal 40%, transparent 40%);
+    color: $azul-principal;
+    text-align: center;
+}
+
+h2{
+    display: inline;
+    font-family: $titulo;
+    background: linear-gradient(to top, $amarillo-principal 40%, transparent 40%);
+    color: $azul-principal;
+    text-align: center;
+}
+
+
+@font-face {
+    font-family: 'TT Drugs';
+    src: url('/recursos/fuentes/TT_Drugs_Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Drugs bold';
+    src: url('/recursos/fuentes/TT_Drugs_Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Drugs italic';
+    src: url('/recursos/fuentes/TT_Drugs_Light_Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/*ESTILOS GENERALES*/
+h1{
+    font-family: $titulo;
+}
+
+body{
+    background-color:$blanco;
+    font-family: $parrafo;
+}
+
+.boton{
+    background-color: $amarillo-principal;
+    color: $blanco;
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $blanco;
+        border:1px solid $amarillo-principal;
+        color: $amarillo-principal;
+    }
+}
+
+img{
+    filter: grayscale(1);
+    transition: filter 0.5s ease;
+    &:hover{
+        filter: none
+    }
+}
+
+
+/*MENU*/
+@import 'partials/menu';
+
+/*FOOTER*/
+@import 'partials/footer';
+
+/*INDEX*/
+@import 'partials/index';
+
+
+

@@ -1,0 +1,536 @@
+/*HERO SECTION*/
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    .hero_imagen{
+        background-color: $azul-principal;
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        box-shadow: 2px 2px 2px 2px;
+
+    }
+    .hero_overlay{
+        display: none;
+        
+    }
+
+    .hero_texto{
+        position: absolute;
+        background-color: $blanco;
+        border: 1px solid $azul-principal;
+        width: 80%;
+        z-index: 1;
+        right: 10%;
+        top: 35%;
+        max-width: 700px;
+        padding: 25px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        text-align: center;
+        border-radius: 8px;
+        color: $azul-principal;
+        transition: all 0.3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        h1{
+            text-decoration: underline;
+            text-decoration-color: $amarillo-principal;
+            font-size: 2rem;
+        }
+        p{
+            font-family: $parrafo;
+            font-weight: 400;
+        }
+        }
+}
+
+@media (min-width:768px){
+    .hero{
+        height: 80vh;
+        margin-bottom: 50px;
+        .hero_imagen{
+            height: 80vh;
+            position: relative;
+            
+        }
+        .hero_overlay{
+            display: block;
+            position: absolute;
+            z-index: 0;
+            background-color: $azul-principal;
+            height: 80vh;
+            width: 50%;
+            top: 0;
+            bottom: 0;
+            left: 45%;
+            width: 100vw;
+            transform: skewX(-20deg);
+        }
+
+        .hero_texto{
+            top: 30%;
+            right: 10%;
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.manifiesto{
+    background-color: $azul-principal;
+    opacity: 1;
+    color: $blanco;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 1.2rem;
+    
+    .manifiesto_titulo{
+        color: $amarillo-principal;
+        font-family: $parrafo;
+        font-size: 1rem;
+    }
+    .manifiesto_texto{
+
+        font-size: 1rem;
+        text-align: left;
+        font-family: $parrafo;
+        
+    }
+
+    
+    @media(min-width: 768px){
+        .manifiesto_titulo, .manifiesto_texto{
+            font-size: 1.8rem;  
+        }
+        }
+    }
+
+
+/*SERVICIOS*/
+.titulo_servicios{
+    margin: 2%;
+    text-align: center;
+    h2{
+        display: inline;
+        font-size: 2.5rem;
+        font-family: $titulo;
+        background: linear-gradient(to top, $amarillo-principal 40%, transparent 40%);
+        text-decoration-color: $amarillo-principal;
+        color: $azul-principal;
+        text-align: center;
+    }
+}
+
+.card_servicios{
+    .card-header{
+        border: 1px solid $azul-principal;
+        background-color: $azul-principal;
+        color: $blanco;
+        font-family: $titulo;
+        transition: all 0.5s ease;
+    }
+    .card-body{
+        border: 1px solid $azul-principal;
+        transition: all 0.5s ease;
+        h5{
+            font-family: $titulo;
+        }
+        p{
+            font-family: $parrafo;
+            color: $gris;
+        }
+        .lista_servicios{
+            font-size: 0.8rem;
+            font-family: $parrafo;
+            color: $gris;
+            text-align: left;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            ul {
+                list-style: none; // quitamos el bullet original
+                padding-left: 1.5em; // espacio para el ícono
+            }
+            
+            ul li::before {
+                content: '\f14a';
+                font-family: 'Font Awesome 6 Free';
+                font-weight: 900; // usa 400 si es un ícono "regular"
+                margin-right: 0.5em;
+                color: $azul-principal;
+                font-size: 1em;
+                display: inline-block;
+                width: 1em;
+            }
+        }
+    }
+    &:hover{
+        .card-header{
+            background-color: $blanco;
+            color: $azul-principal;
+        }
+        .card-body{
+            background-color: $azul-principal;
+            color: $blanco;
+            p{
+                color: $blanco;
+            }
+            ul{
+                color: $blanco;
+            }
+            ul li::before{
+                color: $blanco;
+            }
+        }
+    }
+
+}
+
+/*OFERTAS*/
+.ofertas{
+    background-color: $azul-principal;
+    text-align: center;
+    .titulo_ofertas{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        h2{
+            font-size: 2.5rem;
+            color: $blanco;
+        }
+    }
+}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: start;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    .col{
+        min-width: 250px;
+        max-width: 280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            transform: translateY(-20px);
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .scroll-container{
+        justify-content: center;
+    }
+    
+    .scroll_redes{
+        justify-content: space-around;
+    }
+}
+
+.card_ofertas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 20px  solid $amarillo-principal;
+}
+
+.card-body-ofertas{
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    min-height: 40vh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        background-color: white;
+        color: $azul-principal;
+    }
+    h3{
+        font-family: $parrafo;
+        font-size: 1.5rem;
+        text-align: center;
+        height: 3rem;
+        
+    }
+    h4{
+        font-family: $titulo;
+        height: 4rem;
+        margin: 10px;
+        font-size: 3.5rem;
+    }
+    .old-pricing-card-title {
+        text-decoration: line-through;
+        font-size: 1rem;
+        font-family: $parrafo;
+        font-style: italic;
+    }
+
+    div > p {
+        font-size: 0.5rem;
+        color: gray;
+        font-style: italic;
+    }
+}
+
+.pricing-card-title{
+    font-size: 40px;
+    small{
+        font-size: 20px;
+    }
+}
+
+/*PROCESO*/
+.titulo_proceso{
+    margin: 2%;
+    text-align: center;
+    h2{
+        display: inline;
+        font-size: 2.5rem;
+        font-family: $titulo;
+        background: linear-gradient(to top, $amarillo-principal 40%, transparent 40%);
+        text-decoration-color: $amarillo-principal;
+        color: $azul-principal;
+        text-align: center;
+    }
+}
+
+.proceso_mandos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+
+    .boton-circulo{
+        background-color: $azul-principal;
+        opacity: 0.5;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        p{
+            color: $blanco;
+            font-family: $titulo;
+            font-size: 2.8rem;
+            padding-top: 10px;
+        }
+        &:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.boton-circulo.activo {
+    opacity: 1;
+    box-shadow: 0 0 0 2px #222 inset;
+    transform: scale(1.2);
+}
+
+.proceso_index{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-top: 30px;
+    .paso_proceso{
+        width: 50%;
+        position: relative;
+        .numero_proceso{
+        position: absolute;
+        background-color: $azul-principal;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        left: 15%;
+        font-family: $titulo;
+        font-size: 4rem;
+        
+        }
+        p{
+            color: $blanco;
+            padding-top: 10px;
+            }
+        }
+        .contenedor_proceso{
+            position: absolute;
+            top:10%;
+            left: 30%;
+            background-color: $blanco;
+            border: 1px solid $azul-principal;
+            width: 75vw;
+            max-width: 700px;
+            box-shadow: 2px 2px 5px gray;
+            opacity: 1;
+            transition: opacity 0.4s ease;
+            .imagen_proceso{
+                img{
+                    height:200px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+            }
+            &.fade-out {
+                opacity: 0;
+                }
+            
+            &.fade-in {
+                opacity: 1;
+                }
+                
+            .contenido_proceso{
+                padding: 5%;
+                .titulo_contenedor_proceso{
+                    font-size: 2rem;
+                    text-align: center;
+                    color: $azul-principal;
+                }
+                .descripcion_contenedor_proceso{
+                    p{
+                        font-size: 0.8rem;
+                        font-family: $parrafo;
+                        color: $gris;
+                        text-align: justify;
+                    }   
+                }
+                .lista_contenedor_proceso{
+                    font-size: 0.8rem;
+                    font-family: $parrafo;
+                    color: $gris;
+                    text-align: left;
+                    ul {
+                        list-style: none; // quitamos el bullet original
+                        padding-left: 1.5em; // espacio para el ícono
+                    }
+                    
+                    ul li::before {
+                        content: '\f14a';
+                        font-family: 'Font Awesome 6 Free';
+                        font-weight: 900; // usa 400 si es un ícono "regular"
+                        margin-right: 0.5em;
+                        color: $azul-principal;
+                        font-size: 1em;
+                        display: inline-block;
+                        width: 1em;
+                    }   
+                }
+            }
+        }
+    }
+
+    @media(min-width: 800px) {
+        .proceso_mandos{
+            height: 60vh;
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+        .proceso_index {
+            width: 80%;
+            height: 50vh;
+        .paso_proceso {
+            .contenedor_proceso {
+            height: 40vh;
+            width: 70vw;
+            display: flex;
+            max-width: 700px;
+            .imagen_proceso {
+                width: 40%; // 👈 importante
+                
+                img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center center;
+                }
+            }
+    
+            .contenido_proceso {
+                width: 60%; // 👈 también importante
+                padding: 5%;
+            }
+            }
+        }
+        }
+    }
+
+
+/*TESTIMONIOS*/
+.contenedor_general_testimonios{
+    background-color: $azul-principal;
+    h2{
+        color: $blanco;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+.scroll-container_testimonios{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 25px;
+    align-items: center;
+    justify-content: start;
+    scroll-snap-type: x mandatory;
+    text-align: center;
+    .card-testimonios{
+        min-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 6px solid $amarillo-principal;
+        img{
+            border-radius: 50%;
+            width: 60%;
+            margin: 10px;
+        }
+        h5{
+            font-family: $titulo;
+            font-size: 2.2rem;
+            color: $azul-principal;
+        }
+        p{
+            font-size: 0.8rem;
+            color:$gris
+        }
+    }
+}
+
+

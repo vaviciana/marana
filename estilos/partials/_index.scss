@@ -3,18 +3,17 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     .hero_imagen{
         background-color: $azul-principal;
         position: absolute;
         height: 50vh;
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
         z-index: -1;
         top: 0;
         bottom: 0;
-        box-shadow: 2px 2px 2px 2px;
 
     }
     .hero_overlay{
@@ -54,23 +53,23 @@
 
 @media (min-width:768px){
     .hero{
-        height: 80vh;
+        height: 70vh;
         margin-bottom: 50px;
         .hero_imagen{
-            height: 80vh;
+            height: 90vh;
             position: relative;
-            
+            width: 100vw;
+            object-position:center left;
         }
         .hero_overlay{
             display: block;
             position: absolute;
             z-index: 0;
             background-color: $azul-principal;
-            height: 80vh;
-            width: 50%;
+            height: 90vh;
             top: 0;
             bottom: 0;
-            left: 45%;
+            left: 55%;
             width: 100vw;
             transform: skewX(-20deg);
         }
@@ -78,6 +77,10 @@
         .hero_texto{
             top: 30%;
             right: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
             h1{
                 font-size: 3rem;
             }
@@ -92,33 +95,31 @@
     background-color: $azul-principal;
     opacity: 1;
     color: $blanco;
-    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 1.2rem;
+    padding: 3rem;
     
-    .manifiesto_titulo{
-        color: $amarillo-principal;
-        font-family: $parrafo;
-        font-size: 1rem;
-    }
     .manifiesto_texto{
-
-        font-size: 1rem;
+        animation: slideInLeft 2s ease forwards;
+        font-size: 1.5rem;
         text-align: left;
-        font-family: $parrafo;
+        font-family: $titulo;
         
     }
+}
 
-    
-    @media(min-width: 768px){
-        .manifiesto_titulo, .manifiesto_texto{
-            font-size: 1.8rem;  
-        }
-        }
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
     }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
 
 
 /*SERVICIOS*/
@@ -465,29 +466,27 @@
         .proceso_index {
             width: 80%;
             height: 50vh;
-        .paso_proceso {
-            .contenedor_proceso {
-            height: 40vh;
-            width: 70vw;
-            display: flex;
-            max-width: 700px;
-            .imagen_proceso {
-                width: 40%; // 👈 importante
-                
-                img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: center center;
+            .paso_proceso {
+                .contenedor_proceso {
+                width: 70vw;
+                display: flex;
+                max-width: 700px;
+                .imagen_proceso {
+                    width: 40%; // 👈 importante
+                    img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                    }
+                }
+        
+                .contenido_proceso {
+                    width: 60%; // 👈 también importante
+                    padding: 5%;
+                }
                 }
             }
-    
-            .contenido_proceso {
-                width: 60%; // 👈 también importante
-                padding: 5%;
-            }
-            }
-        }
         }
     }
 

@@ -109,19 +109,18 @@ img:hover {
   position: relative;
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
 }
 .hero .hero_imagen {
   background-color: #0F1C2E;
   position: absolute;
   height: 50vh;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   z-index: -1;
   top: 0;
   bottom: 0;
-  box-shadow: 2px 2px 2px 2px;
 }
 .hero .hero_overlay {
   display: none;
@@ -157,29 +156,34 @@ img:hover {
 
 @media (min-width: 768px) {
   .hero {
-    height: 80vh;
+    height: 70vh;
     margin-bottom: 50px;
   }
   .hero .hero_imagen {
-    height: 80vh;
+    height: 90vh;
     position: relative;
+    width: 100vw;
+    object-position: center left;
   }
   .hero .hero_overlay {
     display: block;
     position: absolute;
     z-index: 0;
     background-color: #0F1C2E;
-    height: 80vh;
-    width: 50%;
+    height: 90vh;
     top: 0;
     bottom: 0;
-    left: 45%;
+    left: 55%;
     width: 100vw;
     transform: skewX(-20deg);
   }
   .hero .hero_texto {
     top: 30%;
     right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
   }
   .hero .hero_texto h1 {
     font-size: 3rem;
@@ -192,29 +196,29 @@ img:hover {
   background-color: #0F1C2E;
   opacity: 1;
   color: #F8F9FA;
-  height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  padding: 1.2rem;
-}
-.manifiesto .manifiesto_titulo {
-  color: #E3B448;
-  font-family: "Lora";
-  font-size: 1rem;
+  padding: 3rem;
 }
 .manifiesto .manifiesto_texto {
-  font-size: 1rem;
+  animation: slideInLeft 2s ease forwards;
+  font-size: 1.5rem;
   text-align: left;
-  font-family: "Lora";
-}
-@media (min-width: 768px) {
-  .manifiesto .manifiesto_titulo, .manifiesto .manifiesto_texto {
-    font-size: 1.8rem;
-  }
+  font-family: "TT Drugs bold";
 }
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /*SERVICIOS*/
 .titulo_servicios {
   margin: 2%;
@@ -541,7 +545,6 @@ img:hover {
     height: 50vh;
   }
   .proceso_index .paso_proceso .contenedor_proceso {
-    height: 40vh;
     width: 70vw;
     display: flex;
     max-width: 700px;

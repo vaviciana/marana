@@ -1,0 +1,13 @@
+.solicita_info{
+    font-size: 0.7rem;
+}
+
+a{
+    i{
+        color: $azul-principal;
+        &:hover{
+            color: $amarillo-principal;
+        }
+    }
+    
+}

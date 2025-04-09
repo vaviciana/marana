@@ -12,7 +12,7 @@ h1 {
   display: inline;
   font-family: "TT Drugs bold";
   background: linear-gradient(to top, #E3B448 40%, transparent 40%);
-  color: #0F1C2E;
+  color: #1C2C54;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@ h2 {
   display: inline;
   font-family: "TT Drugs bold";
   background: linear-gradient(to top, #E3B448 40%, transparent 40%);
-  color: #0F1C2E;
+  color: #1C2C54;
   text-align: center;
 }
 
@@ -95,7 +95,7 @@ img:hover {
   height: 60px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid #0F1C2E;
+  border: 1px solid #1C2C54;
   transition: transform 1.2s ease;
 }
 .contenedor_logo img:hover {
@@ -103,6 +103,17 @@ img:hover {
 }
 
 /*FOOTER*/
+.solicita_info {
+  font-size: 0.7rem;
+}
+
+a i {
+  color: #1C2C54;
+}
+a i:hover {
+  color: #E3B448;
+}
+
 /*INDEX*/
 /*HERO SECTION*/
 .hero {
@@ -113,7 +124,7 @@ img:hover {
   overflow: hidden;
 }
 .hero .hero_imagen {
-  background-color: #0F1C2E;
+  background-color: #1C2C54;
   position: absolute;
   height: 50vh;
   width: 100vw;
@@ -128,7 +139,7 @@ img:hover {
 .hero .hero_texto {
   position: absolute;
   background-color: #F8F9FA;
-  border: 1px solid #0F1C2E;
+  border: 1px solid #1C2C54;
   width: 80%;
   z-index: 1;
   right: 10%;
@@ -138,7 +149,7 @@ img:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   border-radius: 8px;
-  color: #0F1C2E;
+  color: #1C2C54;
   transition: all 0.3s ease;
 }
 .hero .hero_texto:hover {
@@ -169,7 +180,7 @@ img:hover {
     display: block;
     position: absolute;
     z-index: 0;
-    background-color: #0F1C2E;
+    background-color: #1C2C54;
     height: 90vh;
     top: 0;
     bottom: 0;
@@ -193,7 +204,7 @@ img:hover {
   }
 }
 .manifiesto {
-  background-color: #0F1C2E;
+  background-color: #1C2C54;
   opacity: 1;
   color: #F8F9FA;
   display: flex;
@@ -230,19 +241,19 @@ img:hover {
   font-family: "TT Drugs bold";
   background: linear-gradient(to top, #E3B448 40%, transparent 40%);
   text-decoration-color: #E3B448;
-  color: #0F1C2E;
+  color: #1C2C54;
   text-align: center;
 }
 
 .card_servicios .card-header {
-  border: 1px solid #0F1C2E;
-  background-color: #0F1C2E;
+  border: 1px solid #1C2C54;
+  background-color: #1C2C54;
   color: #F8F9FA;
   font-family: "TT Drugs bold";
   transition: all 0.5s ease;
 }
 .card_servicios .card-body {
-  border: 1px solid #0F1C2E;
+  border: 1px solid #1C2C54;
   transition: all 0.5s ease;
 }
 .card_servicios .card-body h5 {
@@ -270,17 +281,17 @@ img:hover {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 0.5em;
-  color: #0F1C2E;
+  color: #1C2C54;
   font-size: 1em;
   display: inline-block;
   width: 1em;
 }
 .card_servicios:hover .card-header {
   background-color: #F8F9FA;
-  color: #0F1C2E;
+  color: #1C2C54;
 }
 .card_servicios:hover .card-body {
-  background-color: #0F1C2E;
+  background-color: #1C2C54;
   color: #F8F9FA;
 }
 .card_servicios:hover .card-body p {
@@ -295,7 +306,7 @@ img:hover {
 
 /*OFERTAS*/
 .ofertas {
-  background-color: #0F1C2E;
+  background-color: #1C2C54;
   text-align: center;
 }
 .ofertas .titulo_ofertas {
@@ -335,9 +346,6 @@ img:hover {
   .scroll-container {
     justify-content: center;
   }
-  .scroll_redes {
-    justify-content: space-around;
-  }
 }
 .card_ofertas {
   width: 100%;
@@ -363,7 +371,7 @@ img:hover {
   align-items: center;
   justify-content: center;
   background-color: white;
-  color: #0F1C2E;
+  color: #1C2C54;
 }
 .card-body-ofertas h3 {
   font-family: "Lora";
@@ -397,17 +405,17 @@ img:hover {
 }
 
 /*PROCESO*/
-.titulo_proceso {
+.titulo_proceso, .titulo_pitch {
   margin: 2%;
   text-align: center;
 }
-.titulo_proceso h2 {
+.titulo_proceso h2, .titulo_pitch h2 {
   display: inline;
   font-size: 2.5rem;
   font-family: "TT Drugs bold";
   background: linear-gradient(to top, #E3B448 40%, transparent 40%);
   text-decoration-color: #E3B448;
-  color: #0F1C2E;
+  color: #1C2C54;
   text-align: center;
 }
 
@@ -418,7 +426,7 @@ img:hover {
   gap: 10%;
 }
 .proceso_mandos .boton-circulo {
-  background-color: #0F1C2E;
+  background-color: #1C2C54;
   opacity: 0.5;
   height: 80px;
   width: 80px;
@@ -448,7 +456,7 @@ img:hover {
 .proceso_index {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 70vh;
   margin-top: 30px;
 }
 .proceso_index .paso_proceso {
@@ -457,7 +465,7 @@ img:hover {
 }
 .proceso_index .paso_proceso .numero_proceso {
   position: absolute;
-  background-color: #0F1C2E;
+  background-color: #1C2C54;
   height: 120px;
   width: 120px;
   border-radius: 50%;
@@ -478,7 +486,7 @@ img:hover {
   top: 10%;
   left: 30%;
   background-color: #F8F9FA;
-  border: 1px solid #0F1C2E;
+  border: 1px solid #1C2C54;
   width: 75vw;
   max-width: 700px;
   box-shadow: 2px 2px 5px gray;
@@ -503,7 +511,7 @@ img:hover {
 .proceso_index .contenedor_proceso .contenido_proceso .titulo_contenedor_proceso {
   font-size: 2rem;
   text-align: center;
-  color: #0F1C2E;
+  color: #1C2C54;
 }
 .proceso_index .contenedor_proceso .contenido_proceso .descripcion_contenedor_proceso p {
   font-size: 0.8rem;
@@ -526,7 +534,7 @@ img:hover {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   margin-right: 0.5em;
-  color: #0F1C2E;
+  color: #1C2C54;
   font-size: 1em;
   display: inline-block;
   width: 1em;
@@ -565,7 +573,7 @@ img:hover {
 }
 /*TESTIMONIOS*/
 .contenedor_general_testimonios {
-  background-color: #0F1C2E;
+  background-color: #1C2C54;
 }
 .contenedor_general_testimonios h2 {
   color: #F8F9FA;
@@ -582,6 +590,11 @@ img:hover {
   justify-content: start;
   scroll-snap-type: x mandatory;
   text-align: center;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll-container_testimonios::-webkit-scrollbar {
+  display: none;
 }
 .scroll-container_testimonios .card-testimonios {
   min-width: 300px;
@@ -598,11 +611,260 @@ img:hover {
 .scroll-container_testimonios .card-testimonios h5 {
   font-family: "TT Drugs bold";
   font-size: 2.2rem;
-  color: #0F1C2E;
+  color: #1C2C54;
 }
 .scroll-container_testimonios .card-testimonios p {
   font-size: 0.8rem;
   color: #8D8D8D;
+}
+
+/*PITCH*/
+.titulo_pitch {
+  margin: 1.5rem;
+}
+
+.contenedor_general_pitch {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #F8F9FA;
+}
+.contenedor_general_pitch .contenedor_pitch_marco_fondo_decoracion {
+  display: none;
+}
+.contenedor_general_pitch .contenedor_pitch_marco_fondo_azul {
+  display: none;
+}
+.contenedor_general_pitch .contenedor_pitch_imagen {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: -40%;
+}
+.contenedor_general_pitch .contenedor_pitch_imagen img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.contenedor_general_pitch .contenedor_pitch_texto {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  height: 80vh;
+  width: 80vw;
+  z-index: 1;
+  padding: 20px;
+  background-color: #1C2C54;
+  opacity: 0.75;
+}
+.contenedor_general_pitch .contenedor_pitch_texto p {
+  font-family: "Lora";
+  font-size: 1.2rem;
+  color: #F8F9FA;
+  text-align: justify;
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  .contenedor_general_pitch {
+    position: relative;
+  }
+  .contenedor_general_pitch .contenedor_pitch_marco_fondo_decoracion {
+    position: absolute;
+    display: flex;
+    background-color: #8D8D8D;
+    opacity: 0.75;
+    z-index: 0;
+    height: 70vh;
+    width: 80vw;
+    top: 0;
+    left: 5%;
+  }
+  .contenedor_general_pitch .contenedor_pitch_marco_fondo_azul {
+    position: absolute;
+    display: flex;
+    background-color: #1C2C54;
+    opacity: 0.75;
+    z-index: 0;
+    height: 70vh;
+    width: 80vw;
+    top: 5%;
+    left: 10%;
+  }
+  .contenedor_general_pitch .contenedor_pitch_imagen {
+    top: 5%;
+    left: 12%;
+    z-index: 0.5;
+  }
+  .contenedor_general_pitch .contenedor_pitch_imagen img {
+    height: 80vh;
+  }
+  .contenedor_general_pitch .contenedor_pitch_texto {
+    top: 5%;
+    right: 10%;
+    background-color: transparent;
+    width: 50%;
+    z-index: 1;
+  }
+  .contenedor_general_pitch .contenedor_pitch_texto p {
+    color: #F8F9FA;
+    font-size: 1.1rem;
+  }
+}
+/*CTA INDEX*/
+.cta_index {
+  background-color: #F8F9FA;
+  color: #1C2C54;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "TT Drugs bold";
+  font-size: 1.2rem;
+}
+.cta_index:hover {
+  color: #F8F9FA;
+  background-color: #1C2C54;
+}
+
+.pulso {
+  animation: pulso 8s infinite;
+}
+@keyframes pulso {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*SOBRE MI*/
+.titulo-sobremi {
+  text-align: center;
+}
+.titulo-sobremi h1 {
+  font-size: 2.5rem;
+}
+
+.subtitulo-sobremi {
+  text-align: center;
+}
+
+.contenedor_general_historia {
+  background-color: #1C2C54;
+}
+.contenedor_general_historia .titulo-sobremi-historia {
+  margin: 20px;
+  text-align: center;
+}
+.contenedor_general_historia .titulo-sobremi-historia h2 {
+  color: #F8F9FA;
+  font-size: 2.5rem;
+}
+.contenedor_general_historia .scroll-container_sobremi .col {
+  min-width: 320px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.contenedor_general_historia .scroll-container_sobremi .col .card {
+  width: 300px;
+  flex: 0 0 auto;
+  border: 1px solid #E3B448;
+  border-top: 10px solid #E3B448;
+}
+.contenedor_general_historia .scroll-container_sobremi .col .card img {
+  height: 150px;
+  object-fit: cover;
+}
+.contenedor_general_historia .scroll-container_sobremi .col .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marco_presentacion {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.marco_presentacion img {
+  position: absolute;
+  z-index: 0;
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+.marco_presentacion .marco_presentacion_overlay {
+  position: absolute;
+  z-index: 0.5;
+  height: 80vh;
+  width: 100%;
+  background-color: #1C2C54;
+  opacity: 0.4;
+}
+.marco_presentacion .texto_presentacion {
+  position: absolute;
+  z-index: 0.9;
+  height: 80vh;
+  width: 100%;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: transparent;
+  font-size: 0.9rem;
+}
+.marco_presentacion .texto_presentacion:hover {
+  color: #1C2C54;
+  background-color: #8D8D8D;
+  opacity: 0.7;
+}
+.marco_presentacion .texto_presentacion:hover p {
+  opacity: 1;
+}
+.marco_presentacion .marco_presentacion_quote {
+  position: absolute;
+  bottom: 10%;
+  z-index: 1;
+  color: #E3B448;
+  width: 90%;
+}
+.marco_presentacion .marco_presentacion_quote .presentacion_quote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.marco_presentacion .marco_presentacion_quote .presentacion_quote .quote-inicio {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.marco_presentacion .marco_presentacion_quote .presentacion_quote .frase-presentacion {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+}
+.marco_presentacion .marco_presentacion_quote .presentacion_quote .quote-final {
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

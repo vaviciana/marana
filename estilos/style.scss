@@ -7,7 +7,7 @@
 
 /*VARIABLES IMPORTANTES*/
 /*COLORES*/
-$azul-principal:#0F1C2E;
+$azul-principal:#1C2C54;
 $amarillo-principal:#E3B448;
 $gris:#8D8D8D;
 $blanco:#F8F9FA ;
@@ -101,6 +101,11 @@ img{
 
 /*INDEX*/
 @import 'partials/index';
+
+/*SOBRE MI*/
+@import 'partials/sobremi';
+
+
 
 
 

@@ -1,0 +1,125 @@
+.titulo-sobremi{
+    text-align: center;
+    h1{
+        font-size: 2.5rem;
+        
+    }
+}
+
+.subtitulo-sobremi{
+    text-align: center;
+}
+
+.contenedor_general_historia{
+    background-color: $azul-principal;
+    .titulo-sobremi-historia{
+        margin: 20px;
+        text-align: center;
+        h2{
+            color: $blanco;
+            font-size: 2.5rem;
+        }
+    }
+    
+    .scroll-container_sobremi {
+        .col {
+            min-width: 320px;
+            max-width: 320px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            transition: all 0.5s ease-in-out;
+            .card {
+                width: 300px;
+                flex: 0 0 auto;
+                border: 1px solid $amarillo-principal;
+                border-top: 10px solid $amarillo-principal;
+                img{
+                    height: 150px;
+                    object-fit: cover;
+                }
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            }
+        }
+    }
+}
+
+.marco_presentacion{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    img{
+        position: absolute;
+        z-index: 0;
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .marco_presentacion_overlay{
+        position: absolute;
+        z-index: 0.5;
+        height: 80vh;
+        width: 100%;
+        background-color: $azul-principal;
+        opacity: 0.4;
+    }
+    .texto_presentacion{
+        position: absolute;
+        z-index: 0.9;
+        height: 80vh;
+        width: 100%;
+        padding: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        color: transparent;
+        font-size: 0.9rem;
+        &:hover{
+            color: $azul-principal;
+            background-color: $gris;
+            opacity: 0.7;
+            p{
+                opacity: 1;
+            }
+        }
+    }
+    .marco_presentacion_quote{
+        position: absolute;
+        bottom: 10%;
+        z-index: 1;
+        color: $amarillo-principal;
+        width: 90%;
+        .presentacion_quote{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            .quote-inicio{
+                position: absolute;
+                top:0;
+                left: 0;
+            }
+            .frase-presentacion{
+                position: absolute;
+                top:0;
+                left: 10%;
+                width: 80%;
+            }
+            .quote-final{
+                position: absolute;
+                top: 50%;
+                right: 0;
+            }
+        }
+    }
+}
+

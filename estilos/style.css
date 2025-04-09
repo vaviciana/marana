@@ -624,7 +624,7 @@ a i:hover {
 }
 
 .contenedor_general_pitch {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   position: relative;
   background-color: #F8F9FA;
@@ -651,7 +651,7 @@ a i:hover {
   position: absolute;
   top: 5%;
   right: 0;
-  height: 90vh;
+  height: 105vh;
   width: 80vw;
   z-index: 1;
   padding: 20px;
@@ -660,7 +660,7 @@ a i:hover {
 }
 .contenedor_general_pitch .contenedor_pitch_texto p {
   font-family: "Lora";
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #F8F9FA;
   text-align: justify;
   opacity: 1;

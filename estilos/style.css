@@ -456,7 +456,7 @@ a i:hover {
 .proceso_index {
   display: flex;
   flex-direction: row;
-  height: 70vh;
+  height: 100vh;
   margin-top: 30px;
 }
 .proceso_index .paso_proceso {
@@ -651,7 +651,7 @@ a i:hover {
   position: absolute;
   top: 5%;
   right: 0;
-  height: 80vh;
+  height: 90vh;
   width: 80vw;
   z-index: 1;
   padding: 20px;
@@ -660,7 +660,7 @@ a i:hover {
 }
 .contenedor_general_pitch .contenedor_pitch_texto p {
   font-family: "Lora";
-  font-size: 1.2rem;
+  font-size: 0.85rem;
   color: #F8F9FA;
   text-align: justify;
   opacity: 1;

@@ -360,7 +360,7 @@
 .proceso_index{
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    height: 100vh;
     margin-top: 30px;
     .paso_proceso{
         width: 50%;
@@ -570,7 +570,7 @@
         position: absolute;
         top: 5%;
         right: 0;
-        height: 80vh;
+        height: 90vh;
         width: 80vw;
         z-index: 1;
         padding: 20px;
@@ -578,7 +578,7 @@
         opacity: 0.75;
         p{
             font-family: $parrafo;
-            font-size: 1.2rem;
+            font-size: 0.85rem;
             color: $blanco;
             text-align: justify;
             opacity: 1; 

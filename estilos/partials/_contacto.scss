@@ -1,0 +1,180 @@
+/*HERO CONTACTO*/
+.hero_contacto{
+    background-color: $azul-principal;
+    text-align: center;
+    padding: 1rem;
+    h1{
+        color: $blanco;
+    }
+    p{
+        color: $blanco;
+    }
+
+}
+
+
+.reserva-mapa{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*CONTENEDOR FORMULARIO*/
+.contenedor_formulario{
+    width: 80vw;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    margin: 1rem;
+    p{
+        font-size: 0.8rem;
+    }
+    .formulario_reserva{
+            .inputs{
+                display: flex;
+            flex-direction: column;
+            input{
+                margin-top: 0.3rem;
+                margin-bottom: 0.3rem;
+                width: 100%;
+                font-size: 0.8rem;
+                font-family: sans-serif;
+                font-weight: lighter;
+                padding: 0.2rem;
+                &:focus {
+                    outline: 2px solid $azul-principal;
+                    outline-offset: 2px;
+                    border-color: transparent; // si no quieres doble borde
+                }
+            }
+            input::placeholder{
+                font-size: 0.8rem;
+                font-family: sans-serif;
+                font-weight: lighter;
+                padding: 0.5rem;
+            }
+        }
+        label{
+            text-align: start;
+            font-size: 0.8rem;
+            font-family: $parrafo;
+            a{
+                color: $azul-principal;
+            }
+        }
+    }
+    
+}
+
+
+.flatpickr-day {
+    border-radius: 50%;
+    font-family: $titulo;
+    color: $azul-principal;
+    transition: all 0.2s;
+}
+
+.flatpickr-day:hover {
+    background-color: $azul-principal;
+    color:$blanco;
+}
+
+.flatpickr-day.selected {
+    background-color: $blanco;
+    color: $azul-principal;
+    font-weight: bold;
+    border: 1px solid $azul-principal;
+    &:hover{
+        background-color: $azul-principal;
+        border: none;
+    }
+}
+.flatpickr-day.today {
+    border: 1px solid $amarillo-principal;
+    color: $amarillo-principal;
+}
+.flatpickr-input{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding: 0.5rem;
+}
+
+.flatpickr-monthDropdown-months{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+.cur-year{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+/*MAPA*/
+.contenedor_mapa{
+    height: 20vh;
+    width: 100%;
+    iframe{
+        width: 100%;
+        filter: grayscale(1);
+        box-shadow: 2px 2px 5px gray;
+        z-index: 9999;
+    }
+}
+
+.formulario-mailer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $azul-principal;
+}
+
+@media (min-width:768px){
+    .hero_contacto{
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .reserva-mapa{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding: 1rem;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        .contenedor_formulario{
+            width: 50%;
+            max-width: 500px;
+            max-height: 500px;
+
+        }
+        .contenedor_mapa{
+            height: 100%;
+            width: 100vw;
+
+            iframe{
+                min-height: 100%;
+            }
+        }
+    }
+}

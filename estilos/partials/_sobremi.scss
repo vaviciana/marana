@@ -48,6 +48,7 @@
     }
 }
 
+/*PRESENTACION*/
 .marco_presentacion{
     height: 80vh;
     width: 100%;
@@ -62,6 +63,7 @@
         height: 80vh;
         width: 100%;
         object-fit: cover;
+        object-position: center center;
     }
     .marco_presentacion_overlay{
         position: absolute;
@@ -76,49 +78,269 @@
         z-index: 0.9;
         height: 80vh;
         width: 100%;
-        padding: 1.8rem;
+        padding: 2.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
+        text-align: justify;
         color: transparent;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        transition: all 0.5s ease;
         &:hover{
             color: $azul-principal;
-            background-color: $gris;
+            background-color: $blanco;
+            opacity: 0.7;
+            p{
+                opacity: 1;
+            }
+        }
+        &:focus{
+            color: $azul-principal;
+            background-color: $blanco;
             opacity: 0.7;
             p{
                 opacity: 1;
             }
         }
     }
+    
+}
+
+@media(min-width:768px){
+    .marco_presentacion{
+        height: 60vh;
+        img{
+            height: 60vh;
+            object-position: top center;
+        }
+        .marco_presentacion_overlay{
+            height: 60vh;
+            
+        }
+        .texto_presentacion{
+            height: 60vh;
+            font-size: 1.5rem;
+            padding: 3.5rem;
+        }
+    }
+}
+
+/*QUOTE*/
+.marco_presentacion_quote{
+    background-color: $azul-principal;
+    padding: 1rem;
+    color: $blanco;
+}
+
+@media(min-width:768px){
     .marco_presentacion_quote{
+        div{
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    }
+}
+
+/*VALORES*/
+.contenedor_valores_titulo{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    h2{
+        font-size: 2.5rem;
+        @extend .titulo-sobremi;
+    }
+}
+
+.contenedor_valores {
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.contenedor_valores_caja {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: rotateY(180deg);
+    }
+
+    .cara {
         position: absolute;
-        bottom: 10%;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .contenedor_valores_caja_frente_valor1{
+        background: url('/recursos/valor-1.jpg') center/cover no-repeat;
         z-index: 1;
-        color: $amarillo-principal;
-        width: 90%;
-        .presentacion_quote{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            text-align: justify;
-            .quote-inicio{
-                position: absolute;
-                top:0;
-                left: 0;
-            }
-            .frase-presentacion{
-                position: absolute;
-                top:0;
-                left: 10%;
-                width: 80%;
-            }
-            .quote-final{
-                position: absolute;
-                top: 50%;
-                right: 0;
-            }
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.5;
+            z-index: -1;
+            background-color: $blanco;
+        }
+        h3{
+            font-weight: bold;
+            font-family: $titulo;
+            font-size: 2rem;
+            color: $azul-principal
+        };
+    }
+
+    .contenedor_valores_caja_reverso_valor1 {
+        background: url('/recursos/valor-1.jpg') center/cover no-repeat;
+        transform: rotateY(180deg);
+        position: relative;
+        z-index: 1;
+        font-family: $parrafo;
+        font-size: 1rem;
+        color: $blanco;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $gris;
+            opacity: 0.5;
+            z-index: -1;
+        }
+    }
+    
+
+    .contenedor_valores_caja_frente_valor2{
+        background: url('/recursos/valor-2.jpg') center/cover no-repeat;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.5;
+            z-index: -1;
+            background-color: $blanco;
+        }
+        h3{
+            font-weight: bold;
+            font-family: $titulo;
+            font-size: 2rem;
+            color: $azul-principal
+        };
+    }
+
+    .contenedor_valores_caja_reverso_valor2 {
+        background: url('/recursos/valor-2.jpg') center/cover no-repeat;
+        transform: rotateY(180deg);
+        position: relative;
+        z-index: 1;
+        font-family: $parrafo;
+        font-size: 1rem;
+        color: $blanco;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $gris;
+            opacity: 0.5;
+            z-index: -1;
+        }
+    }
+
+
+    .contenedor_valores_caja_frente_valor3{
+        background: url('/recursos/valor-3.jpg') center/cover no-repeat;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.5;
+            z-index: -1;
+            background-color: $blanco;
+        }
+        h3{
+            font-weight: bold;
+            font-family: $titulo;
+            font-size: 2rem;
+            color: $azul-principal
+        };
+    }
+
+    .contenedor_valores_caja_reverso_valor3 {
+        background: url('/recursos/valor-3.jpg') center/cover no-repeat;
+        transform: rotateY(180deg);
+        position: relative;
+        z-index: 1;
+        font-family: $parrafo;
+        font-size: 1rem;
+        color: $blanco;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $gris;
+            opacity: 0.5;
+            z-index: -1;
+        }
+    }
+
+
+    .contenedor_valores_caja_frente_valor4{
+        background: url('/recursos/valor-4.jpg') center/cover no-repeat;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.5;
+            z-index: -1;
+            background-color: $blanco;
+        }
+        h3{
+            font-weight: bold;
+            font-family: $titulo;
+            font-size: 2rem;
+            color: $azul-principal
+        };
+    }
+
+    .contenedor_valores_caja_reverso_valor4 {
+        background: url('/recursos/valor-4.jpg') center/cover no-repeat;
+        transform: rotateY(180deg);
+        position: relative;
+        z-index: 1;
+        font-family: $parrafo;
+        font-size: 1rem;
+        color: $blanco;
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $gris;
+            opacity: 0.5;
+            z-index: -1;
+        }
+    }
+}
+
+.marco_presentacion_cta{
+    @extend .marco_presentacion_quote;
+    .frase-cta{
+        a{
+            color: $blanco;
         }
     }
 }

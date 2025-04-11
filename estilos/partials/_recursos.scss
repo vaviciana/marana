@@ -1,0 +1,44 @@
+/*HERO*/
+.hero-recursos{
+    background-color: $azul-principal;
+    text-align: center;
+    color: $blanco;
+    padding: 1rem;
+    margin-bottom:1.8rem;
+    h1{
+        color: $blanco;
+    }
+}
+
+/*CARDS RECURSOS*/
+.card-recursos{
+    box-shadow: 2px 2px 10px gray;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease;
+    .card-img-top{
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &:hover{
+        transform: translateY(-20px);
+    }
+}
+
+/*CTA*/
+.cta-recursos{
+    background-color: $azul-principal;
+    color: $blanco;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    a{
+        color: $blanco;
+
+    }
+}

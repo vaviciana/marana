@@ -1,0 +1,91 @@
+.titulo_faqs{
+    background-color: $azul-principal;
+    color: $blanco;
+    text-align: center;
+    padding: 1rem;
+    h1{
+        color: $blanco;
+    }
+}
+
+.contenedor_general_faqs{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contenedor_general_faqs_contenedor_imagen{
+        img{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: bottom center;
+        }
+    }
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-item{
+    border: none !important;
+    .accordion-header{
+        .accordion-button{
+            background-color: $blanco;
+            font-family: $parrafo;
+            color: $azul-principal;
+            outline: none !important;  // fuerza que se quite
+            box-shadow: none !important; // quita también la sombra azul de focus
+            &:focus {
+                background-color: $azul-principal;
+                color: $blanco;
+            }
+            &:active {
+                background-color: $azul-principal;
+                color: $blanco;
+            }
+        }
+    }
+    .accordion-body{
+        font-size: 0.8rem;
+        text-align: justify;
+        color: $gris;
+    }
+}
+
+@media(min-width:600px){
+    .contenedor_general_faqs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .contenedor_general_faqs_contenedor_imagen{
+            img{
+                height: 500px;
+                width: 500px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: bottom center;
+            }
+    }
+        .accordion-item{
+            min-width: 550px;
+            max-width: 550px;
+        }
+    }   
+}
+
+.cta_faqs{
+    background-color: $azul-principal;
+    font-size: 1.5rem;
+    color: $blanco;
+    padding: 1rem;
+    text-align: center;
+    a{
+        color: $blanco;
+    }
+}

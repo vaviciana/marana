@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <!-- SCRIPT -->
+        <script defer src="/js/contacto.js"></script>
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://kit.fontawesome.com/TU_CODIGO_KIT.js" crossorigin="anonymous"></script>
+        <!-- AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- FLATPICKR -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <!-- MAILER -->
+        <!-- MailerLite Universal -->
+        <script>
+            (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+            .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+            n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+            (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+            ml('account', '1439329');
+        </script>
+        <!-- End MailerLite Universal -->
+        <!-- MI ESTILO -->
+        <link rel="stylesheet" href="../estilos/style.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="contenedor_logo">
+                    <img src="../recursos/logo.jpg" alt="">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    </ul>
+                </div>
+                <a href="pages/recursos.html" class="d-none d-lg-flex boton">Contacta</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!-- Hero Section y CTA -->
+            <div class="hero_contacto">
+                <div>
+                    <h1>
+                        Titulo Hero
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quas fuga atque sunt nihil cumque aut earum quis iure ipsam ad quasi dolore id, amet ullam unde minima in ipsa!
+                    </p>
+                    <a href="pages/contacto.html" class="boton">Boton</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- formulario de reserva y contacto -->
+            <div class="reserva-mapa">
+                <div class="contenedor_formulario">
+                    <h2>
+                        Lorem ipsum dolor
+                    </h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed sint reiciendis provident exercitationem hic facere accusamus alias?
+                    </p>
+                    <form id="formulario" class="formulario_reserva">
+                        <div class="inputs">
+                            <input type="text" id="nombre" placeholder="Nombre" required>
+                            <input type="text" id="apellidos" placeholder="Apellidos" required>
+                            <input type="tel" id="telefono" placeholder="Teléfono" required>
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="text" id="selector-fecha" placeholder="Elige una fecha">
+                            <div id="horas-container"></div>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" required>
+                                He leído y acepto la <a href="#">Política de privacidad</a> y los <a href="#">Términos y Condiciones</a>.
+                            </label>
+                        </div>
+                        <button type="submit" class="boton w-100 mt-2">Reservar cita</button>
+                    </form>
+                </div>
+                <div class="contenedor_mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12678.180751904534!2d-5.924404570301672!3d37.4005868040455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f2b264276cf%3A0x4e77a1866d5375c3!2sEdificio%20PortaSevilla!5e0!3m2!1ses!2ses!4v1744301690630!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="formulario-mailer">
+                <div class="ml-embedded" data-form="ioJBQ1"></div>
+            </div>
+        </section>
+            
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top w-100">
+        <ul class="d-flex flex-row gap-2 justify-content-center w-100">
+            <a href="" class="">
+                <i class="fa-brands fa-tiktok fa-xl"></i>
+            </a>
+            <a href="" class="">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a href="" class="">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+        </ul>
+        <div class="ml-embedded d-none d-md-flex" data-form="3tkiGa"></div>
+        </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

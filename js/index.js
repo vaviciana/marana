@@ -51,8 +51,7 @@ function cambiarContenido(paso) {
 }
 
 
-const botones = document.querySelectorAll('.proceso_mandos .boton-circulo')
-;
+const botones = document.querySelectorAll('.proceso_mandos .boton-circulo');
 
 botones.forEach((boton, index) => {
     boton.addEventListener('click', () => {

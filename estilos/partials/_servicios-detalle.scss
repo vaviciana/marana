@@ -1,0 +1,110 @@
+
+.hero-servicios-detalle-general{
+    text-align: start !important;
+}
+
+/*FAQS GENERALES*/
+.accordion-servicios-general{
+    max-width: 600px;
+    min-width: 600px;
+}
+
+
+/*SELECTOR DE SERVICIO*/
+.scroll-container-serviciosdetalle{
+    padding: 2rem;
+    justify-content: start;
+    .col{
+        min-width: 300px;
+        .card-servicios{
+            width: 90%;
+        }
+    }
+}
+
+.servicios-detalle{
+    background-color: $azul-principal;
+    img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .cuerpo_servicios_detalle{
+        padding: 1rem;
+        color: $blanco;
+        text-align: center;
+        h2{
+            color: $blanco;
+            text-align: center;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    .lista_servicios_detalle{
+        font-size: 0.8rem;
+        font-family: $parrafo;
+        text-align: left;
+        h3{
+            font-size: 1.2rem;
+        }
+        ul {
+            list-style: none; // quitamos el bullet original
+            padding-left: 1.5em; // espacio para el ícono
+        }
+            ul li::before {
+                content: '\f14a';
+                font-family: 'Font Awesome 6 Free';
+                font-weight: 900; // usa 400 si es un ícono "regular"
+                margin-right: 0.5em;
+                color: $blanco;
+                font-size: 1em;
+                display: inline-block;
+                width: 1em;
+            }  
+    }
+    .accordion-servicios-detalle{
+        background-color: $azul-principal !important;
+        color: $blanco;
+        .accordion-item{
+            background-color: $azul-principal !important;
+            color: $blanco;
+            .accordion-header{
+                background-color: $azul-principal !important;
+                color: $blanco;
+                .accordion-button{
+                    background-color: $azul-principal !important;
+                    color: $blanco;
+                    &:focus {
+                        color: $blanco;
+                        font-weight: bold;
+                    }
+                    &:active {
+                        color: $blanco;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .accordion-body{
+                color: $blanco;
+            }
+        }
+    }
+}
+
+@media (min-width:600px){
+    .scroll-container-serviciosdetalle{
+        justify-content: center;
+    }
+
+    .servicios-detalle{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        img{
+            height: 100%;
+            width: 30%;
+        }
+    }
+    
+}

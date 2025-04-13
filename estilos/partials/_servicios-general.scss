@@ -1,0 +1,24 @@
+.card-servios{
+    img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        text-align: center;
+    }
+}
+
+.boton-desplegar{
+    background-color: $azul-principal;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $blanco;
+    text-decoration: none;
+    font-size: 1.5rem;
+}

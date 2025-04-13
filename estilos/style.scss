@@ -22,7 +22,6 @@ h1{
     font-family: $titulo;
     background: linear-gradient(to top, $amarillo-principal 40%, transparent 40%);
     color: $azul-principal;
-    text-align: center;
 }
 
 h2{
@@ -111,6 +110,16 @@ img{
 /*RECURSOS*/
 @import 'partials/recursos';
 
+/*SERVICIOS*/
+@import 'partials/servicios-general';
+
+/*SERVICIOS DETALLE*/
+@import 'partials/servicios-detalle';
+
+/*ENTRADAS BLOG*/
+@import 'partials/entrada-blog';
+
 /*CONTACTO*/
-@import 'partials/contacto'
+@import 'partials/contacto';
+
 

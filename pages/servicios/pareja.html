@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <!-- SCRIPT -->
+        <script defer src="/js/servicios-pareja.js"></script>
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://kit.fontawesome.com/TU_CODIGO_KIT.js" crossorigin="anonymous"></script>
+        <!-- AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- FLATPICKR -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <!-- MAILER -->
+        <!-- MailerLite Universal -->
+        <script>
+            (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+            .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+            n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+            (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+            ml('account', '1439329');
+        </script>
+        <!-- End MailerLite Universal -->
+        <!-- MI ESTILO -->
+        <link rel="stylesheet" href="../../estilos/style.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="contenedor_logo">
+                    <img src="../../recursos/logo.jpg" alt="">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    </ul>
+                </div>
+                <a href="pages/recursos.html" class="d-none d-lg-flex boton">Contacta</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!-- Descripción general + Faqs general -->
+            <div class="d-flex flex-column align-items-center justify-content-center flex-md-row">
+                <div class="m-4 d-flex flex-column align-items-center hero-servicios-detalle-general">
+                    <div class="d-flex flex-column align-items-start hero-servicios-detalle-general">
+                        <h1 class="text-start">
+                            Lorem ipsum dolor sit amet consectetur
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At architecto magni a nisi eius atque quisquam repudiandae expedita ex laudantium.
+                        </p>
+                    </div>
+                    <a href="" class="boton">boton</a>
+                </div>
+                <div>
+                    <!-- FAQ's -->
+                    <div class="accordion accordion-servicios-general" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    + ¿Qué diferencia a Emeté.mkt de otras agencias de marketing digital?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    En Emeté.mkt no hacemos estrategias genéricas. Nos enfocamos en negocios físicos y emprendedoras que buscan una presencia digital optimizada sin complicaciones. Trabajamos con estrategias personalizadas, comunicación cercana y soluciones prácticas que realmente generan resultados.
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Cómo puedo saber qué pack se adapta mejor a mi negocio?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Si no estás segura de qué pack elegir, podemos asesorarte según las necesidades de tu negocio. Además, puedes reservar una videollamada gratuita ("Café gratis") para resolver dudas y elegir la mejor opción.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Qué incluye el análisis de competencia en cada pack?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nuestro análisis incluye estudio de redes sociales, estrategia de contenido, engagement, formatos utilizados y posicionamiento de tu competencia directa. Con esta información, creamos una estrategia adaptada para destacar tu negocio.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    ¿Puedo combinar servicios extra con mi pack de redes sociales?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sí, puedes añadir servicios como email marketing, diseño gráfico o campañas de publicidad digital según lo que necesites.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    ¿Qué tipo de contenido se publicará en mis redes?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nos enfocamos en contenido estratégico que conecta con tu audiencia y genera resultados. Usamos formatos como reels, carruseles, posts y contenido interactivo, siempre alineados con tu identidad de marca.
+                                    De todos modos, siempre lo definimos y te lo presentamos, para que tú des el visto bueno a nuestras decisiones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- index de los servicios con cards -->
+            <div class="scroll-container scroll-container-serviciosdetalle text-start">
+                <div class="col">
+                    <div class="card card_servicios">
+                        <h5 class="card-header">Laboral</h5>
+                        <div class="card-body">
+                            <i class="fa-solid fa-briefcase fa-2xl mt-4 mb-4"></i>
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class="lista_servicios mb-3">
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="boton" id="btn-1">+Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card_servicios">
+                        <h5 class="card-header">Laboral</h5>
+                        <div class="card-body">
+                            <i class="fa-solid fa-briefcase fa-2xl mt-4 mb-4"></i>
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class="lista_servicios mb-3">
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="boton" id="btn-2">+Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card_servicios">
+                        <h5 class="card-header">Laboral</h5>
+                        <div class="card-body">
+                            <i class="fa-solid fa-briefcase fa-2xl mt-4 mb-4"></i>
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class="lista_servicios mb-3">
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="boton" id="btn-3">+Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card_servicios">
+                        <h5 class="card-header">Laboral</h5>
+                        <div class="card-body">
+                            <i class="fa-solid fa-briefcase fa-2xl mt-4 mb-4"></i>
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class="lista_servicios mb-3">
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="boton" id="btn-4">+Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Servicio a detalle - cada uno de los servicios y sus propias faqs -->
+            <div class="servicios-detalle">
+                <img src="/recursos/servicios-laboral.jpg" alt="" id="imagen_serviciosDetalle">
+                <div class="cuerpo_servicios_detalle">
+                    <div id="titulo_serviciosDetalle">
+                        <h2>
+                            Lorem ipsum dolor sit
+                        </h2>
+                    </div>
+                    <div id="descrpicion_serviciosDetalle">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perspiciatis illo tempora unde pariatur quis voluptate enim doloremque quo.
+                        </p>
+                    </div>
+                    <div class="lista_servicios_detalle mb-3">
+                        <h3>
+                            ¿Sientes que...?
+                        </h3>
+                        <ul id="lista_serviciosDetalle">
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="accordion accordion-servicios-detalle" id="accordionFaqsServiciosDetalle">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqsOne" aria-expanded="true" aria-controls="collapseFaqsOne" id="Pregunta1">
+                                    + ¿Qué diferencia a Emeté.mkt de otras agencias de marketing digital?
+                                </button>
+                            </h2>
+                            <div id="collapseFaqsOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body" id="Respuesta1">
+                                    En Emeté.mkt no hacemos estrategias genéricas. Nos enfocamos en negocios físicos y emprendedoras que buscan una presencia digital optimizada sin complicaciones. Trabajamos con estrategias personalizadas, comunicación cercana y soluciones prácticas que realmente generan resultados.
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqsTwo" aria-expanded="false" aria-controls="collapseFaqsTwo" id="Pregunta2">
+                                    ¿Cómo puedo saber qué pack se adapta mejor a mi negocio?
+                                </button>
+                            </h2>
+                            <div id="collapseFaqsTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body" id="Respuesta2">
+                                    Si no estás segura de qué pack elegir, podemos asesorarte según las necesidades de tu negocio. Además, puedes reservar una videollamada gratuita ("Café gratis") para resolver dudas y elegir la mejor opción.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqsThree" aria-expanded="false" aria-controls="collapseFaqsThree" id="Pregunta3">
+                                    ¿Qué incluye el análisis de competencia en cada pack?
+                                </button>
+                            </h2>
+                            <div id="collapseFaqsThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body"id="Respuesta3">
+                                    Nuestro análisis incluye estudio de redes sociales, estrategia de contenido, engagement, formatos utilizados y posicionamiento de tu competencia directa. Con esta información, creamos una estrategia adaptada para destacar tu negocio.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqsFour" aria-expanded="false" aria-controls="collapseFaqsFour" id="Pregunta4">
+                                    ¿Puedo combinar servicios extra con mi pack de redes sociales?
+                                </button>
+                            </h2>
+                            <div id="collapseFaqsFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body" id="Respuesta4">
+                                    Sí, puedes añadir servicios como email marketing, diseño gráfico o campañas de publicidad digital según lo que necesites.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqsFive" aria-expanded="false" aria-controls="collapseFaqsFive"id="Pregunta5">
+                                    ¿Qué tipo de contenido se publicará en mis redes?
+                                </button>
+                            </h2>
+                            <div id="collapseFaqsFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body" id="Respuesta5">
+                                    Nos enfocamos en contenido estratégico que conecta con tu audiencia y genera resultados. Usamos formatos como reels, carruseles, posts y contenido interactivo, siempre alineados con tu identidad de marca.
+                                    De todos modos, siempre lo definimos y te lo presentamos, para que tú des el visto bueno a nuestras decisiones.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top w-100">
+        <ul class="d-flex flex-row gap-2 justify-content-center w-100">
+            <a href="" class="">
+                <i class="fa-brands fa-tiktok fa-xl"></i>
+            </a>
+            <a href="" class="">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a href="" class="">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+        </ul>
+        <div class="ml-embedded d-none d-md-flex" data-form="3tkiGa"></div>
+        </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
